@@ -4,361 +4,428 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fig Design</title>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/a576612222.css" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/General.css">
-    <link rel="stylesheet" href="css/sliders.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/Logos.css">
-    <link rel="stylesheet" href="css/Subscribe.css">
-    <link rel="stylesheet" href="css/Footer.css">
-    <link rel="stylesheet" href="css/Features1.css">
-    <link rel="stylesheet" href="css/FAQ.css">
-    <link rel="stylesheet" href="css/Features2.css">
-    <link rel="stylesheet" href="css/Testimonals.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/Buttons.css">
 </head>
 <body>
-    <div class="content-wrapper content-wrapper-navbar">
-        <nav class="navbar">
-            <div class="navbar-logo-wrapper">
-                <img src="./images/Si14.svg" class="navbar-logo" alt="navbar-logo">
-                <div class="silicon">Silicon</div>
+    <header>
+        <div class="container">
+            <a href="main.html"><img src="images/Silicon.svg" alt="silicon-logo"></a>
+
+            <nav id="main-menu" class="navbar">
+                <a class="nav-link" href="#">Features</a>
+            </nav>
+
+            <div id="darkmode-toggles-switch" class="btn-toggle-switch">
+                <span class="label">Dark mode</span>
+                <label for="darkmode-switch" class="toggle-switch">
+                    <input id="darkmode-switch" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
             </div>
-            <div class="menu">
-                <span class="features-text">Features</span>
-            </div>        
-            <div class="theme-switcher">
-                <span class="nav-link">Dark Mode</span>
-                <input type="checkbox" id="dark-mode-toggle" class="toggle-input">
-                <label for="dark-mode-toggle" class="toggle-label"></label>
-            </div>                                     
-            <button class="sign-in">
-                <img src="./images/icon-l.svg" alt="Profile Icon" class="profile-icon">
-                Sign in / up
+
+            <a id="auth-signin" href="#" class="btn-primary">
+                <i class="fa-thin fa-user-large"></i>
+                <span>Sign in / up</span>
+            </a>
+
+            <button class="btn-mobile">
+                <i class="fa-regular fa-bars"></i>
             </button>
-        </nav>
-    </div>
-    <div class="content-wrapper content-wrapper-header">
-        <header class="header">
-            <div class="header-content">
-                <div class="header-text-container">
-                    <h1 class="header-title">Manage All Your Money in One App</h1>
-                    <p class="header-subtitle">We offer you a new generation of the mobile banking.<br>
-                        Save, spend & manage money in your pocket.</p>                    
-                    <div class="market-btns">
-                        <a href="#" target="_blank">
-                            <img src="./images/market-btns.svg" alt="Download on App Store and Google Play" class="market-btn">
-                        </a>         
-                    </div>       
-                </div> 
-                <div class="discover-more">
-                    <button class="next-btn">
-                        <img src="./images/next-btn.svg" alt="Discover more">
-                    </button>
-                    <span>Discover more</span>
-                </div>
-            </div>
-            <div class="header-image">
-                <img src="./images/iPhone 12 Pro 1 & 2.svg" alt="iPhones Display" class="iphone-image">
-            </div>
-        </header>
-    </div>
-    <div class="content-wrapper content-wrapper-logos">
-        <div class="logos-section">
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo1.svg" alt="logo 1">
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo2.svg" alt="logo 2">
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo3.svg" alt="logo 3">
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo4.svg" alt="logo 4">
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo5.svg" alt="logo 5">
-                </div>
-            </div>
-            <div class="logo">
-                <div class="logoipsum">
-                    <img src="./images/logo6.svg" alt="logo 6">
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="content-wrapper content-wrapper-features">
-        <div class="features1-section">
-            <div class="features1-image-container">
-                <img src="./images/iPhone 12 pro features.svg" alt="iPhone with card" class="features1-iphone-image">
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="container">
+                <div class="headline">
+                    <h1>Manage All Your Money in One App</h1>
+                </div>
+                <div class="content">
+                    <p>We offer you a new generation of the mobile banking. Save, spend & manage money in your pocket.</p>
+                    <div class="buttons">
+                        <a class="btn-download-app" href="#"><img src="images/Appstore.svg" alt="appstore"></a>
+                        <a class="btn-download-app" href="#"><img src="images/googleplay.svg" alt="googleplay"></a>
+                    </div>
+                    <a href="#" class="discover-more">
+                        <span class="btn-circle" href="">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </span>
+                        <span>Discover more</span>
+                    </a>
+                </div>
+                <div class="images">
+                    <img class="img-back" src="images/iphone-budget_desktop.svg" alt="iphone my budget">
+                    <img class="img-front" src="images/iPhone-yourcards_desktop.svg" alt="iphone your cards">
+                </div>
             </div>
-            <div class="features1-header-container">
-                <h1 class="features1-title">App Features</h1>
-                <p class="features1-subtext">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.
-                </p>
-                <div class="features1-content-container">
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Easy Payments Icon.svg" alt="Easy Payments Icon" class="features1-icon-image">
-                        </div>
-                        <div class="features1-text">
-                            <h5>Easy Payments</h5>
-                            <p>Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
-                        </div>
+        </section>
+
+        <section id="logos">
+            <div class="container">
+                <div id="logo-1" class="logo-box">
+                    <img src="images/logo1.svg" alt="logo-box">
+                </div>
+                <div id="logo-2" class="logo-box">
+                    <img src="images/logo2.svg" alt="logo-box">
+                </div>
+                <div id="logo-3" class="logo-box">
+                    <img src="images/logo3.svg" alt="logo-box">
+                </div>
+                <div id="logo-4" class="logo-box">
+                    <img src="images/logo4.svg" alt="logo-box">
+                </div>
+                <div id="logo-5" class="logo-box">
+                    <img src="images/logo5.svg" alt="logo-box">
+                </div>
+                <div id="logo-6" class="logo-box">
+                    <img src="images/logo6.svg" alt="logo-box">
+                </div>
+            </div>
+        </section>
+
+        <section id="app-features">
+            <div class="container">
+                <div class="images">
+                    <img src="images/AppfeaturesPhone.svg" alt="App Features Phone">
+                </div>
+                <div class="content">
+                    <div class="headline">
+                        <h1>App Features</h1>
                     </div>
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Data security icon.svg" alt="Data Security Icon" class="features1-icon-image">
-                        </div>
-                        <div class="features1-text">
-                            <h5>Data Security</h5>
-                            <p>Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
-                        </div>
+                    <div class="subheader">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
                     </div>
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Cost statistics.svg" alt="Cost Statistics Icon" class="features1-icon-image">
+                    <div class="Icons">
+                        <div id="icon-1" class="qa-box">
+                            <img src="images/Easy Payments Icon.svg" alt="Easy Payments Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Easy Payments</p>
+                                <p class="subtitle">Id mollis consectetur congue egestas egestas suspendisse blandit justo.</p>
+                            </div>
                         </div>
-                        <div class="features1-text">
-                            <h5>Cost Statistics</h5>
-                            <p>Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+
+                        <div id="icon-2" class="qa-box">
+                            <img src="images/Data security icon.svg" alt="Data Security Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Data Security</p>
+                                <p class="subtitle">Augue pulvinar justo, fermentum fames aliquam accumsan vestibulum non.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Support Icon.svg" alt="Support 24/7 Icon" class="features1-icon-image">
+
+                        <div id="icon-3" class="qa-box">
+                            <img src="images/Cost statistics.svg" alt="Cost Statistics Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Cost Statistics</p>
+                                <p class="subtitle">Mattis urna ultricies non amet, purus in auctor non. Odio vulputate ac nibh.</p>
+                            </div>
                         </div>
-                        <div class="features1-text">
-                            <h5>Support 24/7</h5>
-                            <p>A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+
+                        <div id="icon-4" class="qa-box">
+                            <img src="images/Support Icon.svg" alt="Support 24/7 Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Support 24/7</p>
+                                <p class="subtitle">A elementum, imperdiet enim, pretium etiam facilisi in aenean quam mauris.</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Cashback Icon.svg" alt="Regular Cashback Icon" class="features1-icon-image">
+
+                        <div id="icon-5" class="qa-box">
+                            <img src="images/Cashback Icon.svg" alt="Regular Cashback Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Regular Cashback</p>
+                                <p class="subtitle">Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
+                            </div>
                         </div>
-                        <div class="features1-text">
-                            <h5>Regular Cashback</h5>
-                            <p>Sit facilisis dolor arcu, fermentum vestibulum arcu elementum imperdiet eleifend.</p>
-                        </div>
-                    </div>
-                    <div class="features1-icon-box">
-                        <div class="features1-icon">
-                            <img src="./images/Top standards icon.svg" alt="Top Standards Icon" class="features1-icon-image">
-                        </div>
-                        <div class="features1-text">
-                            <h5>Top Standards</h5>
-                            <p>Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+
+                        <div id="icon-6" class="qa-box">
+                            <img src="images/Top standards icon.svg" alt="Top Standards Icon">
+                            <div class="text-wrapper">
+                                <p class="title">Top Standards</p>
+                                <p class="subtitle">Faucibus cursus maecenas lorem cursus nibh. Sociis sit risus id. Sit facilisis dolor arcu.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="slider-section">
-        <h1 class="slider-title">How Does It Work?</h1>  
-        <div class="slider-images">
-            <div class="slider-container">
-                <img src="./images/Slider 1.svg" alt="Slider 1" class="image-slider">
+        </section>
+
+        <section id="sliders">
+            <div class="container">
+                <div class="sliders-header">
+                    <p class="sliders-title">How Does It Work?</p>
+                </div>
+
+                <div class="sliders-mobile-wrapper">
+                    <div id="sliders-mobile" class="slider-images">
+                        <img src="images/Sliders-mobile.svg" alt="Slider4">
+                    </div>
+                    <div class="Mobile-bottomtext">
+                        <p class="Mobile-bottom-title">Transfers to people from your contact list</p>
+                        <p class="Mobile-bottom-subtitle">Proin volutpat mollis egestas. Nam luctus facilisis ultrices. Pellentesque volutpat ligula est. Mattis fermentum, at nec lacus.</p>
+                    </div>
+                </div>
+
+                <div class="sliders-desktop-wrapper">
+                    <div class="Desktopimagessliders">
+                        <div id="slider-1" class="slider-images">
+                            <img src="images/Slider 1.svg" alt="Slider1">
+                        </div>
+                        <div id="slider-2" class="slider-images">
+                            <img src="images/Slider 2.svg" alt="Slider2">
+                        </div>
+                        <div id="slider-3" class="slider-images">
+                            <img src="images/Slider 3.svg" alt="Slider3">
+                        </div>
+                    </div>
+                    <div class="Desktop-bottomtext">
+                        <p class="Desktop-bottom-title">Latest transaction history</p>
+                        <p class="Desktop-bottom-subtitle">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum.</p>
+                    </div>
+                </div>
             </div>
-            <div class="slider-container">
-                <img src="./images/Slider 2.svg" alt="Slider 2" class="image-slider">
+        </section>
+
+        <section id="upperfeatures">
+            <div class="container">
+                <div class="upperfeaturestext">
+                    <p class="faTEXT">Make your money transfer simple and clear</p>
+                    <div class="TextLines">
+                        <div class="TextLine">
+                            <i class="fa-sharp fa-regular fa-circle-check"></i>
+                            <p>Banking transactions are free for you</p>
+                        </div>
+                        <div class="TextLine">
+                            <i class="fa-sharp fa-regular fa-circle-check"></i>
+                            <p>No monthly cash commission</p>
+                        </div>
+                        <div class="TextLine">
+                            <i class="fa-sharp fa-regular fa-circle-check"></i>
+                            <p>Manage payments and transactions online</p>
+                        </div>
+                    </div>
+                    <a id="Learn more" href="#" class="btn-primary">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="UpperfeaturesIMG">
+                    <img src="images/Features2P1.svg" alt="FeaturesIMG">
+                </div>
             </div>
-            <div class="slider-container">
-                <img src="./images/Slider 3.svg" alt="Slider 3" class="image-slider">
+        </section>
+
+        <section id="bottomfeatures">
+            <div class="container">
+                <div class="bottomfeaturesIMG">
+                    <img src="images/Features2P2.svg" alt="FeaturesIMG">
+                </div>
+                <div class="bottomfeaturestext">
+                    <p class="fa-btm-TEXT">Receive payment from international bank details</p>
+                    <div class="iconboxes-BTM">
+                        <div class="iconbox-btm">
+                            <img src="images/Easy Payments Icon.svg" alt="Easy Payments Icon">
+                            <p>Manage your payments online. Mollis congue egestas egestas fermentum fames.</p>
+                        </div>
+                        <div class="iconbox-btm">
+                            <img src="images/Cashback Icon.svg" alt="Regular Cashback Icon">
+                            <p>A elementum, imperdiet enim, pretium etiam facilisi aenean quam mauris.</p>
+                        </div>
+                    </div>
+                    <a id="Learn more" href="#" class="btn-primary">
+                        <span>Learn more</span>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-        <div class="description">
-            <h4 class="description-title">Latest transaction history</h4>
-            <p class="description-text">Enim, et amet praesent pharetra. Mi non ante hendrerit amet sed. Arcu sociis tristique quisque hac in consectetur condimentum.</p>
-        </div>
-    </div>
-    <div class="features2">
-        <div class="top-section">
-            <div class="top-left">
-                <h2>Make your money<br> transfer simple and clear</h2>
-                <ul class="features-list">
-                    <li><img src="images/bx-check-circle.svg" alt="">Banking transactions are free for you</li>
-                    <li><img src="images/bx-check-circle.svg" alt="">No monthly cash commission</li>
-                    <li><img src="images/bx-check-circle.svg" alt="">Manage payments and transactions online</li>
-                </ul>
-                <button class="learn-more-btn">Learn more
-                    <span class="icon-r">
-                        <img src="images/icon-r.svg" alt="icon-r">
-                    </span>
-                </button>
+        </section>
+
+        <section id="Testimonals">
+            <div class="container">
+                <div class="TestimonalsTXT">
+                    <p>Clients Are<br>Loving Our App</p>
+                </div>
+                <div class="TestimonalsIMG">
+                    <img src="images/testimonalimg.svg" alt="TestimonalIMG">
+                </div>
             </div>
-            <div class="top-right">
-                <img src="images/Features2P2.svg" alt="Transfer Example" />
+        </section>
+
+        <section id="FAQ">
+            <div class="container">
+                <div class="FAQleft">
+                    <div class="FAQtxt">
+                        <div class="titleTXTFAQ">
+                            <p>Any questions? Check out the FAQs</p>
+                        </div>
+                        <div class="subtitleTXTFAQ">
+                            <p>Still have unanswered questions and need to get in touch?</p>
+                        </div>
+                    </div>
+                    <div class="Accordion-Mobile">
+                        <div class="mobileopenUP">
+                            <p>Is any of my personal information stored in the App?</p>
+                            <img class="ChevronUPimg" src="images/chevron-up.svg" alt="Chevron-up">
+                        </div>
+                        <div class="mobileopendown">
+                            <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
+                            <p>Ornare senectus fusce dignissim ut. Integer consequat in eu tortor, faucibus et lacinia posuere. Turpis sit viverra lorem suspendisse lacus aliquam auctor vulputate. Quis egestas aliquam nunc purus lacus, elit leo elit facilisi. Dignissim amet adipiscing massa integer.</p>
+                        </div>
+                        <div class="MobileClosed">
+                            <div>
+                                <p>What formats can I download my transaction history in?</p>
+                                <button class="Mobilechevron-down">
+                                    <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                                </button>
+                            </div>
+                            <div>
+                                <p>Can I schedule future transfers?</p>
+                                <button class="Mobilechevron-down">
+                                    <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                                </button>
+                            </div>
+                            <div>
+                                <p>When can I use Banking App services?</p>
+                                <button class="Mobilechevron-down">
+                                    <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                                </button>
+                            </div>
+                            <div>
+                                <p>Can I create my own password that is easy for me to remember?</p>
+                                <button class="Mobilechevron-down">
+                                    <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                                </button>
+                            </div>
+                            <div>
+                                <p>What happens if I forget or lose my password?</p>
+                                <button class="Mobilechevron-down">
+                                    <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="Mobile-ButtonFAQ">
+                            <img class="MobileButton" src="images/Contact Us-mobilebtn.svg" alt="Contact us">
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="bottom-section">
-            <div class="bottom-left">
-                <img src="images/Features2P1.svg" alt="Transfer Example" />
-            </div>
-            <div class="bottom-right">
-                <div class="features2-header-container">
-                    <h1 class="features2-title">Receive payment from<br> international bank details</h1>
-                    <div class="features2-icon-box">
-                        <div class="icon-box2">
-                            <div class="iconF2"></div>
-                            <img src="images/Easy Payments Icon.svg" alt="Features2icon">
-                            <p>Manage your payments online.<br> Mollis congue egestas egestas<br> fermentum fames.</p>
-                            <button class="learn-more-btn">Learn more
-                                <span class="icon-r">
-                                    <img src="images/icon-r.svg" alt="icon-r">
-                                </span>
+        </section>
+
+        <section id="FAQ-Desktop">
+            <div class="container-desktop">
+                <div class="FAQleft-desktop">
+                    <div class="FAQtxt-desktop">
+                        <div class="titleTXTFAQ-desktop">
+                            <p>Any questions?<br>Check out the FAQs</p>
+                        </div>
+                        <div class="subtitleTXTFAQ-desktop">
+                            <p>Still have unanswered questions and need to get<br> in touch?</p>
+                        </div>
+                    </div>
+
+                    <div class="FAQiconboxes-container-desktop">
+                        <div class="FAQiconboxblue-desktop">
+                            <i class="fa-sharp fa-solid fa-phone-volume" style="color: blue;"></i>
+                            <p>Still have questions?</p>
+                            <a href="#" class="btn-Blue">
+                                <span>Contact us</span>
+                                <i class="fa-solid fa-arrow-right" style="color: blue;"></i>
+                            </a>
+                        </div>
+
+                        <div class="FAQiconboxgreen-desktop">
+                            <div id="Green comments" class="Green comments">
+                                <img src="images/Frame 48095375.svg" alt="Green comments">
+                            </div>
+                            <p>Don't like phone calls?</p>
+                            <a href="#" class="btn-Green">
+                                <span>Contact us</span>
+                                <i class="fa-solid fa-arrow-right" style="color: green;"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="Accordion-Desktop">
+                    <div class="AccordionItem">
+                        <p>Is any of my personal information stored in the App?</p>
+                        <button class="Desktopchevron-down">
+                            <img class="ChevronDOWNIMG-desktop" src="images/chevron-down.svg" alt="Chevron-down">
+                        </button>
+                    </div>
+
+                    <div class="AccordionItem">
+                        <p>What formats can I download my transaction history in?</p>
+                        <button class="Desktopchevron-down">
+                            <img class="ChevronDOWNIMG-desktop" src="images/chevron-down.svg" alt="Chevron-down">
+                        </button>
+                    </div>
+
+                    <div class="AccordionItem open">
+                        <div class="open-panel-header">
+                            <p>Can I schedule future transfers?</p>
+                            <button class="Desktopchevron-up">
+                                <img class="ChevronUPIMG-desktop" src="images/chevron-up.svg" alt="Chevron-up">
                             </button>
                         </div>
-                        <div class="icon-box2">
-                            <div class="iconF2"></div>
-                            <img src="images/Cashback Icon.svg" alt="Features2icon">
-                            <p>A elementur and imperdiet enim,<br> pretium etiam facilisi aenean<br> quam mauris.</p>
+                        <div class="open-panel-body">
+                            <p>Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.</p>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="testimonials-section">
-        <div class="testimonial-title">
-            <h1>Clients are<br> Loving Our App</h1>
-        </div>
-        <div class="testimonials-image">
-            <img src="images/testimonial1.svg" alt="Testimonial 1" />
-            <img src="images/testimonial2.svg" alt="Testimonial 2" />
-        </div>
-    </section>
-    <div class="faq-accordion-wrapper">
-        <section class="faq-section">
-            <div class="faq-header">
-                <h2 class="faq-title">Any questions?<br> Check out the FAQs</h2>
-                <p class="faq-subtitle">Still have unanswered questions and need to get<br> in touch?</p>
-            </div>
-            <div class="icon-box-container">
-                <div class="icon-box icon-box-left">
-                    <div class="icon">
-                        <img src="images/Contact us.svg" alt="Icon 1">
-                    </div>
-                    <div class="txt">Still have questions?</div>
-                    <div class="txt-link">Contact us
-                        <img src="images/Blueicon.svg" alt="Blue arrow">
-                    </div>
-                </div>
-                <div class="icon-box icon-box-right">
-                    <div class="icon">
-                        <img src="images/contact us2.svg" alt="Icon 2">
-                    </div>
-                    <div class="txt">Don't like phone calls?</div>
-                    <div class="txt-link">Contact us
-                        <img src="images/Greenicon.svg" alt="Green arrow">
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="accordion-container">
-            <div class="accordion">
-                <div class="panel-content">
-                    <p class="panel-text">Is any of my personal information stored in the App?</p>
-                    <div class="panel-arrow">
-                        <img src="images/arrowclosed.svg" alt="arrowclosed">
-                    </div>
-                </div>
-                <div class="panel-content">
-                    <p class="panel-text">What formats can I download my transaction history in?</p>
-                    <div class="panel-arrow">
-                        <img src="images/arrowclosed.svg" alt="arrowclosed">
-                    </div>
-                </div>
-                <div class="panel panel-open">
-                    <div class="panel-header">
-                        <p class="panel-text">
-                            Can I schedule future transfers?
-                        </p>
-                        <div class="panel-arrow">
-                            <img src="images/arrowopen.svg" alt="arrowopen">
-                        </div>
-                    </div>
-                    <div class="panel-description">
-                        Nunc duis id aenean gravida tincidunt eu, tempor ullamcorper. Viverra aliquam arcu, viverra et, cursus. Aliquet pretium cursus adipiscing gravida et consequat lobortis arcu velit. Nibh pharetra fermentum duis accumsan lectus non. Massa cursus molestie lorem scelerisque pellentesque. Nisi, enim, arcu purus gravida adipiscing euismod montes, duis egestas. Vehicula eu etiam quam tristique tincidunt suspendisse ut consequat.
-                    </div>
-                </div>                
-                <div class="panel-content">
-                    <p class="panel-text">When can I use Banking App services?</p>
-                    <div class="panel-arrow">
-                        <img src="images/arrowclosed.svg" alt="arrowclosed">
-                    </div>
-                </div>
-                <div class="panel-content">
-                    <p class="panel-text">Can I create my own password that is easy for me to remember?</p>
-                    <div class="panel-arrow">
-                        <img src="images/arrowclosed.svg" alt="arrowclosed">
-                    </div>
-                </div>
-                <div class="panel-content">
-                    <p class="panel-text">What happens if I forget or lose my password?</p>
-                    <div class="panel-arrow">
-                        <img src="images/arrowclosed.svg" alt="arrowclosed">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>    
-    <div class="subscribe-section">
-        <div class="subscribe-container">
-          <div class="first-container">
-            <img src="images/Notification.svg" alt="Notification" class="notification-image">
-            <h4 class="subscribe-title">Subscribe to our newsletter to stay<br> informed about latest updates</h4>
-          </div>
-          <div class="second-container">
-            <div class="input-group">
-              <div class="iconletter">
-                <img src="images/bx-envelope.svg" alt="bx-envelope" class="bx-envelope">
-                <span class="small-text">Your email</span>
-              </div>
-              <button class="subscribe-btn">Subscribe</button>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-text">© 2024 Silicon. All rights reserved. Credit MadrasThemes</p>
+                    <div class="AccordionItem">
+                        <p>When can I use Banking App services?</p>
+                        <button class="Desktopchevron-down">
+                            <img class="ChevronDOWNIMG-desktop" src="images/chevron-down.svg" alt="Chevron-down">
+                        </button>
+                    </div>
+
+                    <div class="AccordionItem">
+                        <p>Can I create my own password that is easy for me to remember?</p>
+                        <button class="Desktopchevron-down">
+                            <img class="ChevronDOWNIMG-desktop" src="images/chevron-down.svg" alt="Chevron-down">
+                        </button>
+                    </div>
+
+                    <div class="AccordionItem">
+                        <p>What happens if I forget or lose my password?</p>
+                        <button class="Mobilechevron-down">
+                            <img class="ChevroDOWNIMG" src="images/chevron-down.svg" alt="Chevron-down">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Subscribe">
+            <div class="container">
+                <div class="Headline">
+                    <img class="Bell-IMG" src="images/Bell-IMG.svg" alt="Bell-IMG">
+                    <p class="h1-Desktop">Subscribe to our newsletter to stay<br> informed about latest updates</p>
+                </div>
+                <div class="content">
+                    <div class="TXT-Icon">
+                        <i class="fa-regular fa-envelope"></i>
+                        <p>Your Email</p>
+                    </div>
+                    <div class="button">
+                        <a id="Subscribe" href="#" class="btn-primary">
+                            <span>Subscribe</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="Copyright">© 2024 Silicon. All rights reserved.</p>
+            <p class="Credit">Credit MadrasThemes</p>
         </div>
     </footer>
-    <script>
-        const toggleSwitch = document.getElementById('dark-mode-toggle');
-        const currentTheme = localStorage.getItem('theme');
-        
-        if (currentTheme) {
-            document.body.classList.add(currentTheme);
-            if (currentTheme === 'dark-mode') {
-                toggleSwitch.checked = true;
-            }
-        }
-        
-        toggleSwitch.addEventListener('change', function() {
-            if (toggleSwitch.checked) {
-                document.body.classList.add('dark-mode');
-                localStorage.setItem('theme', 'dark-mode');
-            } else {
-                document.body.classList.remove('dark-mode');
-                localStorage.setItem('theme', 'light-mode');
-            }
-        });
-    </script>
 </body>
 </html>
+
